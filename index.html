@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>5-1-14 クリックしたらナビが右から左に出現</title>
+	<meta name="description" content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header id="header">
+		<img src="./img/logo_sample.png" alt="歯科医院ロゴ" class="d-logo">
+		<h1 class="sankaku">△△歯科</h1>
+		<img src="./img/nantoka.png" alt="診療時間" class="s-jikan">
+	</header>
+
+	<div class="openbtn"><span></span><span></span><span></span></div>
+	<nav id="g-nav">
+		<div id="g-nav-list">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="policy.html">治療方針・流れ</a></li>
+				<li><a href="stuff.html">スタッフ紹介</a></li>
+				<li><a href="subject.html">診療科目</a></li>
+				<li><a href="#">交通・アクセス</a></li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<nav id="b-nav">
+		<ul>
+		  <li><a href="index.html">HOME</a></li>
+		  <li><a href="policy.html">治療方針・流れ</a></li>
+		  <li><a href="stuff.html">スタッフ紹介</a></li>
+		  <li><a href="subject.html">診療科目</a></li>
+		  <li><a href="#">交通・アクセス</a></li>
+		</ul>
+	  </nav>
+
+	<main id="main">
+		<section>
+			<h2>Area 1</h2>
+			<p>
+				テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+			</p>
+			<!--/area1-->
+		</section>
+		<section>
+			<h1>お知らせ</h1>
+        <article id="part1">
+          <p class="text_date"><time datetime="2021-04-01">2021.04.01</time></p>
+          <a href="">
+			<h2>4月の予定</h2>
+		  </a>
+        </article>
+        <article id="part2">
+          <p class="text_date"><time datetime="2021-02-01">2021.02.01</time></p>
+          <a href="">
+			<h2>診療時間の変更について</h2>
+		  </a>
+        </article>
+        <article id="part3">
+          <p class="text_date"><time datetime="2021-01-01">2021.01.01</time></p>
+          <a href="">
+			<h2>明けましておめでとうございます！</h2>
+		  </a>
+        </article>
+		</section>
+			<!--/area2-->
+		<!--/main-->
+	</main>
+
+	<footer id="footer">
+		<img src="./img/access.png" alt="交通・アクセス">
+		<small>&copy; copyright.</small>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

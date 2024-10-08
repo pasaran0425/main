@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav {
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: #999;
+    /*動き*/
+    transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+    right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list {
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    /*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li {
+    list-style: none;
+    text-align: center;
+}
+
+#g-nav li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn {
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 85px;
+    height: 50px;
+}
+
+/*×に変化*/
+.openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+    top: 15px;
+}
+
+.openbtn span:nth-of-type(2) {
+    top: 30px;
+}
+
+.openbtn span:nth-of-type(3) {
+    top: 46px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+/*　メニューバー　*/
+#b-nav {
+    width: 100%;
+    height: 85px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#b-nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+#b-nav li {
+    list-style: none;
+    display: inline-block;
+    width: 18%;
+    min-width: 90px;
+}
+#b-nav li:not(:last-child){
+    border-right:4px solid #ddd;
+    }
+
+#b-nav a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    font-size: 1.5rem;
+}
+#b-nav a:hover{
+    color:#F7CB4D;
+    }
+
+/*========= レイアウトのためのCSS ===============*/
+.d-logo {
+    /* display: flex;
+    align-items: center; */
+    width: 120px;
+    height: auto;
+}
+
+.sankaku {
+    /* display: flex;
+    align-items: center; */
+    left: 150px;
+    right: auto;
+    top: 35px;
+    /* position: absolute; */
+    font-size: 3.5rem;
+}
+
+.s-jikan {
+    display: block;
+    margin-left: 20px;
+    height: 6rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+p {
+    margin-top: 20px;
+}
+
+small {
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+#header {
+    width: 100%;
+    height: auto;
+    background: #333;
+    color: #fff;
+    /* text-align: center; */
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+}
+
+section {
+    padding: 100px 30px;
+}
+
+section:nth-child(2n) {
+    background: #f3f3f3;
+}
+
+/*　画像リンク　*/
+.image_link{
+    display:block;
+  }
+  .image_link:hover img{
+    opacity:0.6;
+  }
+
+#footer {
+    background: #333;
+    padding: 20px;
+}
+.koumoku{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.koumoku img{
+    width: 200px;
+}
+/*治療の流れ*/
+.step {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;
+    /*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;
+    /*線*/
+    border-radius: 10px;
+    /*角の丸み*/
+}
+
+.step p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*メイン*/
+div {
+    width: 50%;
+}
+
+main {
+    text-align: center;
+}
