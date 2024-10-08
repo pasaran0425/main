@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="△△歯科の公式ホームページ。診療内容、営業時間、アクセス情報などをご案内します。">
+    <title>△△歯科</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 外部CSSファイル -->
+    <style>
+        /* 基本のCSSはここで定義するか、外部ファイルに分ける */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script type="module" src="js/index.js" defer></script>
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header id="header">
+        <h1>△△歯科</h1>
+        <p>地域に根ざした安心の歯科治療を提供します</p>
+        <div id="hambargerMenu"></div>
+    </header>
+
+    <!-- ナビゲーションメニュー -->
+    <nav>
+        <a href="#about">当院について</a>
+        <a href="#services">診療内容</a>
+        <a href="#access">アクセス</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <section id="about">
+        <h2>当院について</h2>
+        <p>△△歯科は、最新の技術と温かいケアを提供することをモットーにしています。ご家族全員の口腔ケアをお任せください。</p>
+    </section>
+
+    <section id="services">
+        <h2>診療内容</h2>
+        <ul>
+            <li>一般歯科</li>
+            <li>矯正歯科</li>
+            <li>インプラント</li>
+            <li>口腔外科</li>
+        </ul>
+    </section>
+
+    <section id="access">
+        <h2>アクセス</h2>
+        <p>△△駅から徒歩5分。駐車場完備。</p>
+        <img src="./images/map.png" alt="当院の地図" width="100%" />
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>ご予約やご相談は以下のフォームよりお気軽にお問い合わせください。</p>
+        <form action="#" method="POST">
+            <label for="name">お名前:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br><br>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2024 △△歯科. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

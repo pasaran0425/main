@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>5-1-14 クリックしたらナビが右から左に出現</title>
+	<meta name="description" content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="module" src="js/index.js" defer></script>
+</head>
+
+<body>
+	<header id="header">
+		<img src="./img/logo_sample.png" alt="歯科医院ロゴ" class="d-logo">
+		<h1 class="sankaku">△△歯科</h1>
+		<img src="./img/nantoka.png" alt="診療時間" class="s-jikan">
+		<div id="hambargerMenu"></div>
+		<div id="navMenu"></div>
+	</header>
+
+	<div class="openbtn"><span></span><span></span><span></span></div>
+	<nav id="g-nav">
+		<div id="g-nav-list">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="policy.html">治療方針・流れ</a></li>
+				<li><a href="stuff.html">スタッフ紹介</a></li>
+				<li><a href="subject.html">診療科目</a></li>
+				<li><a href="#">交通・アクセス</a></li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<nav id="b-nav">
+		<ul>
+		  <li><a href="index.html">HOME</a></li>
+		  <li><a href="policy.html">治療方針・流れ</a></li>
+		  <li><a href="stuff.html">スタッフ紹介</a></li>
+		  <li><a href="subject.html">診療科目</a></li>
+		  <li><a href="#">交通・アクセス</a></li>
+		</ul>
+	  </nav>
+
+	<main id="main">
+		<section>
+			<h2>治療方針</h2>
+			<p>
+				きっちり治療を行うのはもちろんですが、歯磨き指導を行い、
+				虫歯や歯周病の予防に力を入れております。<br>
+				皆様のお話やご希望を聞かせていただいて、ベストな治療方針を
+				ご提案させていただきます。<br>
+				また、当院ではインフォームドコンセント
+				（説明と同意）<br>
+				の考え方を大切にしています。<br>
+				はじめに患者さんのお話をじっくりうかがったうえで治療計画を立案し、<br>
+				治療に際しては患者さんが不安を抱かないように<br>
+				丁寧でわかりやすいご説明を欠かしません。<br>
+				ご理解・ご納得いただいてから治療を開始しますので、ご安心ください。
+			</p>
+			<!--/area1-->
+		</section>
+		<section>
+			<h2>治療の流れ</h2>
+			<div class="step">
+				<p>問診・医療面接</p>
+			</div>
+			<div class="step">
+				<p>応急処置</p>
+			</div>
+			<div class="step">
+				<p>総合検査</p>
+			</div>
+			<div class="step">
+				<p>診断・治療計画立案</p>
+			</div>
+			<div class="step">
+				<p>歯周病治療</p>
+			</div>
+			<div class="step">
+				<p>再評価検査</p>
+			</div>
+			<div class="step">
+				<p>虫歯治療</p>
+			</div>
+			<div class="step">
+				<p>メンテナンス前評価</p>
+			</div>
+			<div class="step">
+				<p>メンテナンス</p>
+			</div>
+			<!--/area2-->
+		</section>
+		<!--/main-->
+	</main>
+
+	<footer id="footer">
+		<small>&copy; copyright.</small>
+	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
